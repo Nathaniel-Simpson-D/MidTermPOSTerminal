@@ -28,19 +28,19 @@ namespace MidtermPos
 
         }
 
-        public static string ReceiptItems()
+        public static void ReceiptItems(List<Items> orderedItems)
         {
-            foreach (var item in collection)
+            foreach (Items item in orderedItems)
             {
-                List<string> orderedItems = new List<string>
+                Console.WriteLine($"{item.Name} {item.Price,-0}");
             }
         }
 
-        public static void PriceCalculator()
+        public static void PriceCalculator(List<Items> orderedItems,string pay)
         {
             double subTotal = 0;//{ item.Name }{ item.Price };
             subTotal = Math.Round(subTotal, 2);
-            foreach (var item in collection)
+            foreach (Items item in orderedItems)
             {
                 subTotal += item.Price;
             }
@@ -57,28 +57,15 @@ namespace MidtermPos
             Console.WriteLine();
             Console.WriteLine($"Total           ..........            ${totalAmount}  ");
             Console.WriteLine();
-            if (card)
-            {
-
-                Console.WriteLine(card.payment)
-            }
-            else if (cash)
-            {
-
-                Console.WriteLine(payment);
-            }
-            else if (check)
-            {
-                Console.WriteLine();
-            }
+            Console.WriteLine($"{pay,-0}");
             Console.WriteLine("   ===============================================     ");
         }
 
-        public static void CompleteReceipt()
+        public static void CompleteReceipt(List<Items> order, string pay)
         {
-            ReceiptItems();
+            ReceiptItems(order);
             Console.WriteLine();
-            PriceCalculator();
+            PriceCalculator(order, pay);
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("       S~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~S      ");

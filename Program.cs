@@ -11,9 +11,7 @@ namespace MidtermPos
     {
         static void Main(string[] args)
         {
-            //List<Items> menu = new List<Items>();
-            //ReadFile(menu);
-            //DisplayMenuItems(menu);
+            
         }
         public static void ReadFile(List<Items> itemList)
         {
