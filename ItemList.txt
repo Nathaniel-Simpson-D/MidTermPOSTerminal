@@ -1,0 +1,14 @@
+﻿Cheese|Pizza|Slice of cheese pizza|2
+Pepperoni|Pizza|Slice of pepperoni pizza|2
+Bacon|Pizza|Slice of bacon pizza|2
+Veggie|Pizza|Slice of veggie pizza|2
+Sumpreme|Pizza|Slice of sumpreme pizza|2.5
+Macaroni and Cheese|Side|Cup of Macaroni and Cheese|1.5
+Breadsticks|Side|2 breadstick|1.5
+Salad|Side|Tossed Salad with dressing of choice|2.5
+Chicken Wings|Side|6 chicken wings|5
+Bottled Water|Beverage|20oz bottle of water|1.25
+Bottled Soda|Beverage|20oz bottle of soda|1.5
+Fountain Drink|Beverage|20oz cup for fountain drink dispensor|1
+
+
