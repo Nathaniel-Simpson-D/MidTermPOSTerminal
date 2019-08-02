@@ -51,13 +51,13 @@ namespace MidtermPos
             double totalAmount = subTotal + salesTax;
             totalAmount = Math.Round(totalAmount, 2);
             Console.WriteLine("   ===============================================     ");
-            Console.WriteLine($"Subtotal        ..........            ${subTotal}     ");
+            Console.WriteLine($"Subtotal        ..........            {subTotal:C2}     ");
             Console.WriteLine();
-            Console.WriteLine($"Sales Tax (6%)  ..........            ${salesTax}     ");
+            Console.WriteLine($"Sales Tax (6%)  ..........            {salesTax:C2}     ");
             Console.WriteLine();
-            Console.WriteLine($"Total           ..........            ${totalAmount}  ");
+            Console.WriteLine($"Total           ..........            {totalAmount:C2}  ");
             Console.WriteLine();
-            Console.WriteLine($"{pay}");
+            Console.WriteLine($"{pay:C2}");
             Console.WriteLine("   ===============================================     ");
         }
 
