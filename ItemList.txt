@@ -13,3 +13,5 @@ Fountain Drink|Beverage|20oz cup for fountain drink dispensor|1
 Fries|Side|Fries|2
 Green Beans|Side|Cup of green beans|2
 Beer|Beverage|Crappy Pilsner|6
+
+Oysters|Side|Mountain Oysters|12

@@ -20,12 +20,11 @@ namespace MidtermPos
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine("           ==================================          ");
-            Console.WriteLine("                    1. Add To Order                    ");
-            Console.WriteLine("                    2. Add New Item To Menu            ");
-            Console.WriteLine("                    3. Leave The Pizzeria              ");
+            Console.WriteLine("                  1. Add To Order                      ");
+            Console.WriteLine("                  2. Add New Item To Menu              ");
+            Console.WriteLine("                  3. Leave The Pizzeria                ");
             Console.WriteLine("           ==================================          ");
-            Console.WriteLine("                 What would you like to do?            ");
-
+            Console.WriteLine("                What would you like to do?             ");
         }
 
         public static void ReceiptItems(List<Items> orderedItems)
@@ -63,6 +62,8 @@ namespace MidtermPos
 
         public static void CompleteReceipt(List<Items> order, string pay)
         {
+            Console.WriteLine("=======================================================");
+            Console.WriteLine("Your order is as follows:                              ");
             ReceiptItems(order);
             Console.WriteLine();
             PriceCalculator(order, pay);
@@ -73,8 +74,6 @@ namespace MidtermPos
             Console.WriteLine("       S              Gran Giorno!              S      ");
             Console.WriteLine("       S            555 - 888 - 1000            S      ");
             Console.WriteLine("       S~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~S      ");
-
-
         }
     }
 }

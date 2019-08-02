@@ -11,7 +11,7 @@ namespace MidtermPos
         public Items(string name, string catagorie, string discription, double price)
         {
             Name = name;
-            Catagorie = catagorie;
+            Category = catagorie;
             Discription = discription;
             Price = price;
         }
@@ -21,7 +21,7 @@ namespace MidtermPos
         }
 
         public string Name { get; set; }
-        public string Catagorie { get; set; }
+        public string Category { get; set; }
         public string Discription { get; set; }
         public double Price { get; set; }
 

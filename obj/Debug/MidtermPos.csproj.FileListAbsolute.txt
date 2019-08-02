@@ -26,3 +26,10 @@ C:\Users\Deno\Documents\Grand Circus\MidTermPOSTerminal\MidTermPOSTerminal\obj\D
 C:\Users\Deno\Documents\Grand Circus\MidTermPOSTerminal\MidTermPOSTerminal\obj\Debug\MidtermPos.csproj.CoreCompileInputs.cache
 C:\Users\Deno\Documents\Grand Circus\MidTermPOSTerminal\MidTermPOSTerminal\obj\Debug\MidtermPos.exe
 C:\Users\Deno\Documents\Grand Circus\MidTermPOSTerminal\MidTermPOSTerminal\obj\Debug\MidtermPos.pdb
+C:\Users\tweed\source\repos\MidTerm2\MidTermPOSTerminal\bin\Debug\MidtermPos.exe.config
+C:\Users\tweed\source\repos\MidTerm2\MidTermPOSTerminal\bin\Debug\MidtermPos.exe
+C:\Users\tweed\source\repos\MidTerm2\MidTermPOSTerminal\bin\Debug\MidtermPos.pdb
+C:\Users\tweed\source\repos\MidTerm2\MidTermPOSTerminal\obj\Debug\MidtermPos.csprojAssemblyReference.cache
+C:\Users\tweed\source\repos\MidTerm2\MidTermPOSTerminal\obj\Debug\MidtermPos.csproj.CoreCompileInputs.cache
+C:\Users\tweed\source\repos\MidTerm2\MidTermPOSTerminal\obj\Debug\MidtermPos.exe
+C:\Users\tweed\source\repos\MidTerm2\MidTermPOSTerminal\obj\Debug\MidtermPos.pdb
