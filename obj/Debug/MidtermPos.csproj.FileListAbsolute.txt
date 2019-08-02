@@ -1,0 +1,7 @@
+C:\CLabs\MidtermPos\MidTermPOS Experimental\MidTermPOSTerminal\bin\Debug\MidtermPos.exe.config
+C:\CLabs\MidtermPos\MidTermPOS Experimental\MidTermPOSTerminal\bin\Debug\MidtermPos.exe
+C:\CLabs\MidtermPos\MidTermPOS Experimental\MidTermPOSTerminal\bin\Debug\MidtermPos.pdb
+C:\CLabs\MidtermPos\MidTermPOS Experimental\MidTermPOSTerminal\obj\Debug\MidtermPos.csprojAssemblyReference.cache
+C:\CLabs\MidtermPos\MidTermPOS Experimental\MidTermPOSTerminal\obj\Debug\MidtermPos.csproj.CoreCompileInputs.cache
+C:\CLabs\MidtermPos\MidTermPOS Experimental\MidTermPOSTerminal\obj\Debug\MidtermPos.exe
+C:\CLabs\MidtermPos\MidTermPOS Experimental\MidTermPOSTerminal\obj\Debug\MidtermPos.pdb

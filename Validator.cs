@@ -119,7 +119,8 @@ namespace MidtermPos
             Console.WriteLine("press ESC to exit");
             while (Console.ReadKey(true).Key != ConsoleKey.Escape)
             { }
-            //System.Environment.Exit(0); closes program
+            System.Environment.Exit(0); 
+            //closes program
         }
         public static bool VerifyPassword(string gateWord)
         {
