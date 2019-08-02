@@ -20,14 +20,16 @@ namespace MidtermPos
                     List<Items> itemList = new List<Items>();
 
                     ReadFile(itemList);
+                    Console.Clear();
                     TerminalMethods.WelcomeMenu();
-                    int functionChoice = Validator.GetIntChoice(1, 3);
+                    int functionChoice = Validator.GetIntChoice(1, 3)+1;
                     Console.Clear();
 
                     switch (functionChoice)
                     {
                         case 1:
                             DisplayMenuItems(itemList);
+                            Console.WriteLine("\nPlease select menu item by reference number.");
                             int refValue = Validator.GetIntChoice(1, itemList.Count());
                             Console.WriteLine("How many do you want?(max10)");
 
@@ -38,7 +40,7 @@ namespace MidtermPos
                             }
                             break;
                         case 2:
-                            AddItem();
+                            //AddItem();
                             break;
                         case 3:
                             double subTotal = 0;//{ item.Name }{ item.Price };
@@ -47,8 +49,9 @@ namespace MidtermPos
                             {
                                 subTotal += item.Price;
                             }
+                            Console.WriteLine($"The total is ${subTotal}");
                             Console.WriteLine("Are you paying with Cash,Card, or Check(1/2/3)");
-                            int payChoice = Validator.GetIntChoice(1, 3);
+                            int payChoice = Validator.GetIntChoice(1, 3)+1;
                             string pay;
                             if (payChoice == 1)
                             {
@@ -56,7 +59,7 @@ namespace MidtermPos
                                 pay = Trans.GetPayment();
                             }
                             else
-                            if (payChoice == 1)
+                            if (payChoice == 2)
                             {
                                 PaymentMethod Trans = new Card(subTotal);
                                 pay = Trans.GetPayment();
@@ -66,8 +69,12 @@ namespace MidtermPos
                                 PaymentMethod Trans = new Check(subTotal);
                                 pay = Trans.GetPayment();
                             }
-                            TerminalMethods.ReceiptItems(orderedItems);
+                            Console.Clear();
                             TerminalMethods.CompleteReceipt(orderedItems, pay);
+                            Console.WriteLine("Press Enter to exit menu.");
+                            while (Console.ReadKey(true).Key != ConsoleKey.Enter)
+                            {
+                            }
                             rep = false;
                             break;
                     }

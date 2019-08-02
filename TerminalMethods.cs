@@ -32,7 +32,7 @@ namespace MidtermPos
         {
             foreach (Items item in orderedItems)
             {
-                Console.WriteLine($"{item.Name} {item.Price,-0}");
+                Console.WriteLine($"{item.Name}\t\t\t{item.Price}");
             }
         }
 
@@ -57,7 +57,7 @@ namespace MidtermPos
             Console.WriteLine();
             Console.WriteLine($"Total           ..........            ${totalAmount}  ");
             Console.WriteLine();
-            Console.WriteLine($"{pay,-0}");
+            Console.WriteLine($"{pay}");
             Console.WriteLine("   ===============================================     ");
         }
 
