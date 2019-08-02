@@ -11,7 +11,26 @@ namespace MidtermPos
     {
             static void Main(string[] args)
             {
-                bool go = true;
+
+            string path = Directory.GetCurrentDirectory();
+
+            Console.WriteLine(System.Environment.UserName);
+
+            string[] pathSubstring = path.Split('\\');
+            int binIndex = Array.IndexOf(pathSubstring,"bin");
+            binIndex--;
+            string filePath = "";
+            for(int i = 0; i <= binIndex; i++)
+            {
+                filePath += pathSubstring[i] + "\\";
+            }
+            Console.WriteLine(filePath);
+            string textFile = "ItemList.txt";
+            filePath = filePath + textFile;
+            
+
+            
+            bool go = true;
                 while (go)
                 {
                     List<Items> orderedItems = new List<Items>();
@@ -20,7 +39,7 @@ namespace MidtermPos
                     {
                         List<Items> itemList = new List<Items>();
 
-                        ReadFile(itemList);
+                        ReadFile(itemList,filePath);
                         Console.Clear();
                         TerminalMethods.WelcomeMenu();
                         int functionChoice = Validator.GetIntChoice(1, 3) + 1;
@@ -42,7 +61,7 @@ namespace MidtermPos
                                 break;
 
                             case 2:
-                                WriteFile();
+                                WriteFile(filePath);
                                 break;
 
                             case 3:
@@ -106,11 +125,11 @@ namespace MidtermPos
                     {
                         Validator.EndProgram("Goodbye.");
                     }
-                }
+                } 
             }
-            public static void ReadFile(List<Items> itemList)
+            public static void ReadFile(List<Items> itemList, string filePath)
             {
-                StreamReader reader = new StreamReader("../../ItemList.txt");
+                StreamReader reader = new StreamReader(filePath);
                 List<string[]> sortList = new List<string[]>();
                 string line = reader.ReadLine();
                 while (line != null && line != "")
@@ -144,9 +163,9 @@ namespace MidtermPos
                 reader.Close();
             }
 
-            public static void WriteFile()
+            public static void WriteFile(string filePath)
             {
-                using (StreamWriter writer = File.AppendText("../../ItemList.txt"))
+                using (StreamWriter writer = File.AppendText(filePath))
                 {
 
                     string addItem = Validator.GetValidName("What is the name of the item would you like to add? ");
