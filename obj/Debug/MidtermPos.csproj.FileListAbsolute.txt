@@ -5,3 +5,10 @@ C:\CLabs\MidtermPos\MidTermPOS Experimental\MidTermPOSTerminal\obj\Debug\Midterm
 C:\CLabs\MidtermPos\MidTermPOS Experimental\MidTermPOSTerminal\obj\Debug\MidtermPos.csproj.CoreCompileInputs.cache
 C:\CLabs\MidtermPos\MidTermPOS Experimental\MidTermPOSTerminal\obj\Debug\MidtermPos.exe
 C:\CLabs\MidtermPos\MidTermPOS Experimental\MidTermPOSTerminal\obj\Debug\MidtermPos.pdb
+C:\Users\tweed\source\repos\Midterm2\bin\Debug\MidtermPos.exe.config
+C:\Users\tweed\source\repos\Midterm2\bin\Debug\MidtermPos.exe
+C:\Users\tweed\source\repos\Midterm2\bin\Debug\MidtermPos.pdb
+C:\Users\tweed\source\repos\Midterm2\obj\Debug\MidtermPos.csprojAssemblyReference.cache
+C:\Users\tweed\source\repos\Midterm2\obj\Debug\MidtermPos.csproj.CoreCompileInputs.cache
+C:\Users\tweed\source\repos\Midterm2\obj\Debug\MidtermPos.exe
+C:\Users\tweed\source\repos\Midterm2\obj\Debug\MidtermPos.pdb

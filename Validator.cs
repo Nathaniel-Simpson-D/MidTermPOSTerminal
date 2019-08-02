@@ -160,6 +160,40 @@ namespace MidtermPos
                 return false;
             }
         }
+        public static double TryParseDouble(string message)
+        {
+            Console.Write(message);
+            string input = Console.ReadLine();
+            try
+            {
+                double userInput = double.Parse(input);
+                return userInput;
+
+            }
+            catch (FormatException)
+            {
+                return TryParseDouble("That was not a number. Please enter a correct number: ");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"{e.GetType()}");
+                return TryParseDouble("Please enter a correct number: ");
+            }
+        }
+        public static string ValidateCategory(string message)
+        {
+            Console.WriteLine(message);
+            string input = Console.ReadLine();
+            if (input == "Pizza" || input == "Side" || input == "Beverage")
+            {
+                return input;
+            }
+            else
+            {
+                return ValidateCategory("Please enter one of the catergories (Pizza|Side|Beverage|)");
+            }
+
+        }
     }
 }
 
