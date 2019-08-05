@@ -31,7 +31,7 @@ namespace MidtermPos
         {
             foreach (Items item in orderedItems)
             {
-                Console.WriteLine($"{item.Name}\t\t\t{item.Price}");
+                Console.WriteLine($"{item.Name}\t\t\t{item.Price:C2}");
             }
         }
 

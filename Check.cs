@@ -9,9 +9,10 @@ namespace MidtermPos
 {
     class Check : PaymentMethod
     {
-        public Check(double Cost)
+        public double Cost { get; set; } 
+        public Check(double cost)
         {
-            double cost = Cost;
+            Cost = cost;
         }
         public override string GetPayment()
         {

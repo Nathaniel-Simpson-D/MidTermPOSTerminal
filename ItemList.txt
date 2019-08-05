@@ -15,3 +15,4 @@ Green Beans|Side|Cup of green beans|2
 Beer|Beverage|Crappy Pilsner|6
 
 Oysters|Side|Mountain Oysters|12
+BBQ Pizza|Pizza|Pizza with BBQ stuff|8
