@@ -194,6 +194,38 @@ namespace MidtermPos
             }
 
         }
+        public static string GetCVV(string message)
+        {
+            Console.WriteLine(message);
+            System.Console.Write("Enter CVV: ");
+            string password = "";
+            while (true)
+            {
+                System.ConsoleKeyInfo input = System.Console.ReadKey(true);
+                if (input.Key == ConsoleKey.Enter)
+                {
+                    break;
+                }
+                
+                else if (input.Key == ConsoleKey.Backspace)
+                {
+                    if (password.Length > 0 && password != null && password != "")
+                    {
+                        password = password.Remove(password.Length - 1);
+                        Console.Write("\b \b");
+                    }
+
+
+                }
+                else
+                {
+                    password += input.KeyChar;
+                    Console.Write("X");
+                }
+            }
+            return password;
+            
+        }
     }
 }
 

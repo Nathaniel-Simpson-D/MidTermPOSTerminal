@@ -14,3 +14,4 @@ Fries|Side|Fries|2
 Green Beans|Side|Cup of green beans|2
 
 
+Mushrooms|Side|a bowl of shrooms|1.79
