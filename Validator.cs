@@ -223,6 +223,7 @@ namespace MidtermPos
                     Console.Write("X");
                 }
             }
+            Console.WriteLine();
             return password;
             
         }

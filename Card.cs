@@ -35,6 +35,10 @@ namespace MidtermPos
             {
                string cvv = Validator.GetCVV("What is the card CVV?");
                 valid = !Regex.IsMatch(cvv, @"([0-9]{3})");
+                if(cvv.Length != 3)
+                {
+                    valid = true;
+                }
             }
             return $"Card ending in {cardNum.Substring(cardNum.Length - 4, 4)} \n Under {UserName} ${Cost}";
         }
