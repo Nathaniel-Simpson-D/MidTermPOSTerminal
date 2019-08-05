@@ -67,7 +67,7 @@ namespace MidtermPos
             ReceiptItems(order);
             Console.WriteLine();
             PriceCalculator(order, pay);
-            Console.WriteLine();
+            Console.WriteLine(DateTime.Now);
             Console.WriteLine();
             Console.WriteLine("       S~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~S      ");
             Console.WriteLine("       S  Thanks for visiting Deno's Pizzeria!  S      ");
