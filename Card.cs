@@ -28,8 +28,8 @@ namespace MidtermPos
             }
             while (!valid)
             {
-                string expDate = Validator.GetValidString("what is the experation date?");
-                valid = Regex.IsMatch(expDate, @"(([0-9]{2})\/([0-9]{2,4}))");
+                string expDate = Validator.GetValidString("what is the expiration date?");
+                valid = Regex.IsMatch(expDate, @"(([0-1]{1}[0-9]{1})\/([0-9]{2,4}))");
             }
             while (valid)
             {
