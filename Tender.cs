@@ -27,7 +27,7 @@ namespace MidtermPos
                 else if (input /Cost > 1)
                 {
                     Console.WriteLine($"Change Due: ${input - Cost:C2}");
-                    return $"Tender ${input} : Change ${input - Cost:C2}";
+                    return $"Tender ${input} : Change {input - Cost:C2}";
                 }
                 else
                 {
