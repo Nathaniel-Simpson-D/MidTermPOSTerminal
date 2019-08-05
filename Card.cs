@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using static System.Environment;
 
 namespace MidtermPos
 {
@@ -35,7 +36,7 @@ namespace MidtermPos
                string cvv = Validator.GetValidString("What is the card CVV?");
                 valid = !Regex.IsMatch(cvv, @"([0-9]{3})");
             }
-            return $"Card ending in {cardNum.Substring(cardNum.Length - 4, 4)} ${Cost}";
+            return $"Card ending in {cardNum.Substring(cardNum.Length - 4, 4)} \n Under {UserName} ${Cost}";
         }
     }
 }
